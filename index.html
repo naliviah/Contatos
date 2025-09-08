@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Notícias - IBGE</title>
+    <title>Contatos</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header class="cabecalho-principal">
-        <img src="https://agenciadenoticias.ibge.gov.br/templates/agencia_noticias/favicon/favicon-32x32.png" alt="Logo do IBGE">
-        <h1>Últimas Notícias do IBGE</h1>
+        <h1>Lista de contatos</h1>
     </header>
     
-    <main id="container-noticias" class="container-noticias">
-        <p class="mensagem-carregando">Carregando as últimas notícias...</p>
+    <main id="container-contatos">
+        <section id="adicionar">
+            <h2>Adiconar Contatos</h2>
+            <label>Nome:</label>
+            <input type="text" id="nome">
+            <label>Telefone:</label>
+            <input type="number" id="telefone">
+            <label>Cidade:</label>
+            <input type="text" id="cidade"> 
+            <label>URL da foto</label>
+            <input type="text" id="foto">
+            <button id="botao">Adiconar</button>
+        </section>
+        <section id="contatos">
+            <h2>Contatos Salvos</h2>
+            <p>Aguardando contatos</p>
+        </section>
+
     </main>
 
     <footer class="rodape">
-        <p>Dados fornecidos pela API de Notícias do IBGE.</p>
+        <p>Dados fornecidos pela API MockAPI.</p>
     </footer>
 </body>
 </html>
